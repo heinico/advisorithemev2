@@ -1,0 +1,1160 @@
+/*
+Theme Name: Advisori Theme V2
+Author: Nico Heinimäki
+Author URL: http://advisori.org
+Description: Theme is made by myself.
+Version: 2.42
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+	header, footer, aside, nav, article {
+	display: block;
+}
+
+html {
+	/*margin-top: -23px!important;*/
+	margin: 0px;
+	padding: 0px;
+	background: #454454;
+}
+body {
+	text-align: center;
+	background: #454454;
+	border: 0px #fff solid;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	color:#000;
+	line-height: 200%;
+	font-family: Arial, Oswald;
+}
+
+a {
+	color:#fff;
+	opacity: 1;
+}
+
+a:hover {
+	color:#fff;
+	text-decoration:none;
+	opacity: 0.5;
+}
+
+h1 {
+	font-size: 18px;
+	font-family: Arial, Oswald;
+	color:#fff;
+}
+
+h2 {
+ 	font-family: Arial, Oswald;
+	color:#fff;
+}
+
+img{
+	border: 0px solid #686868;
+	max-width: 100%;
+	height: auto;
+}
+
+#preloader {
+
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fefefe;
+	z-index: 999;
+	height: 100%;
+	border: 0;
+}
+
+#loader {
+	width: 235px;
+	height: 235px;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	margin: 300px 0 0 -100px;
+	background: url(images/loader.gif) center no-repeat;
+}
+
+#logo{
+	padding: 10px;
+	background: transparent;
+	border: 0px solid blue;
+	position: relative;
+	max-width: 100%;
+	float: left;
+	z-index: 2;
+}
+
+#logo a {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#logo a:hover {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#wrapper {
+	background: #1e1e1e;
+	/*background: #000 url(images/etukuva.JPG);	*/
+	display: block;
+	border: 0px double #EBEBE9;
+	text-align: left;
+	max-width: 100%;
+	/*max-width: 960px;*/
+	margin: 0 auto;
+	padding: 0px;
+	min-height: 400px;
+}
+
+#headeri {
+	position: fixed;
+	text-align: center;
+	border: 0px solid #890010;
+	padding: 0px;
+	margin: 0 auto;
+	background:rgba(240 , 240 , 240 , 0.5);
+	width: 100%;
+	z-index: 2;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    -ms-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+#puhelin {
+	display: none;
+	position: absolute;
+	right: 0px;
+	margin: 5px;
+}
+
+#puhelin img {
+	height: 50px;
+	width: 50px;
+	padding: 12px;
+	border: 2px solid #890010;
+}
+
+#puhelin a {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+   	transition: 0.3s ease;
+}
+
+#puhelin a:hover {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#hpositioni {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.valikkoPos {
+	float: right;
+}
+.resValikko {
+	display: none;
+	position: fixed;
+	background: rgba(0 , 0 , 0 , 0.8);
+	float: right;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	padding-top: 100px;
+	z-index: -1;
+}
+.resValikko h1 {
+	color: #fff;
+	font-size: 35px;
+}
+
+.resValikko h1:hover {
+	color: #fff;
+	padding: 0px;
+}
+
+#tervetuloaloota {
+	border: 0px double #fff;
+    position: fixed;
+    top: 40%;
+	left: 30%;
+	text-align: center;
+	padding: 20px;
+	z-index: 1;
+}
+#tervetuloaloota p {
+	line-height: 100%;
+	font-size: 80px;
+	color: #f0f0f0;
+	text-shadow: 5px 5px 10px #000;
+}
+
+#kansikuva {
+	background: transparent url(images/etukuva.JPG);
+	background-attachment:fixed;
+	border: 0px solid #890010;
+	max-width: 100%;
+	height: 900px;
+	position: relative;
+	/*z-index: 0;*/
+	margin-bottom: -30px;
+}
+#kansikuvaeng {
+	background: #000 url(images/etukuva.JPG);
+	background-attachment:fixed;
+	max-width: 100%;
+	height: 900px;
+	position: relative;
+}
+#tavastehuskuva {
+	background: #000 url(images/hameenlinna.JPG);
+	border: 0px solid #890010;
+	max-width: 100%;
+	height: 554px;
+}
+
+#lappajarvikuva {
+	background: #000 url(images/services3.jpg);
+	border: 0px solid #890010;
+	max-width: 100%;
+	height: 550px;
+}
+
+#valikuva {
+	background: #000 url(images/kkadv.JPG);
+	background-attachment:fixed;
+	border: 0px solid #890010;
+	max-width: 100%;
+	height: 100px;
+	padding: 200px;
+}
+#page-wrapper > #masthead > hgroup {
+padding-top: 5px;
+}
+#navi{
+	background: transparent;
+	padding: 0px;
+	margin: 10px;
+}
+
+#navi li a {
+ 	font: 20px Oswald;
+	text-transform: uppercase;
+	color:#fff;
+	display:block;
+	text-decoration: none;
+	padding: 28px;
+	border-bottom: 3px solid transparent;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#navi li a:hover {
+	color:#890010;
+	border-bottom: 3px solid #890010;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#navi ul {
+	clear: both;
+	list-style: none;
+}
+
+#navi li {
+	position:relative;
+	display: inline-block;
+	list-style: none;
+	padding: 0px;
+	font: bold 14px Oswald;
+}
+
+#navi ul ul {
+	background:rgba(240 , 240 , 240 , 0.5);
+	border:0px #000 solid;
+	position: absolute;
+	display: none;
+	color: grey;
+	text-align: left;
+}
+
+#navi ul ul a {
+	font: bold 16px Oswald;
+	color:#000;
+	/*color:#3B2C2D;*/
+	display:block;
+	text-decoration: none;
+	width: 200px;
+	padding: 15px;
+	border: 0px solid red;
+}
+
+#navi ul li:hover ul  {
+	display:block;
+}
+
+#main {
+	background: #f0f0f0;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#main h1 {
+ 	font: 65px Arial, Oswald;
+	margin: 0 auto;
+}
+
+#menu a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Oswald;
+	color: #000;
+}
+#menu a :hover{
+	color:#890010;
+}
+
+.border-menu {
+	position: absolute;
+	float: right;
+	top: 30px;
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
+}
+
+.border-menu span, .border-menu span:before, .border-menu span:after {
+  	border-radius: 1px;
+  	height: 5px;
+  	width: 35px;
+  	background: #000;
+  	position: absolute;
+  	display: block;
+  	content: '';
+}
+a.border-menu {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+a.border-menu:hover {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.border-menu span:before {
+  top: -10px;
+}
+.border-menu span:after {
+  bottom: -10px;
+}
+.border-menu span, .border-menu span:before, .border-menu span:after {
+  transition: all 300ms ease-in-out;
+}
+.border-menu.active span {
+  background-color: transparent;
+}
+.border-menu.active span:before, .border-menu.active span:after {
+  top: 0;
+}
+.border-menu.active span:before {
+  transform: rotate(45deg);
+  	background: #fff;
+}
+.border-menu.active span:after {
+  transform: rotate(-45deg);
+  	background: #fff;
+}
+.indexloota {
+	background: #f0f0f0;
+	border: 0px blue solid;
+	width: 100%;
+	min-height: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.indexloota2 {
+	background: url(images/tyotila.JPG) #fff top center no-repeat;
+	background-attachment:fixed;
+	border: 0px blue solid;
+	width: 100%;
+	min-height: 400px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	text-shadow: 5px 5px 10px #000;
+}
+.aboutti {
+	background: #454454;
+	border: 0px blue solid;
+	width: 100%;
+	min-height: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	position: relative;
+}
+.portfolio {
+	min-height: 1000px;
+}
+
+.portfolio h1{
+	color:#454454;
+	padding-bottom: 100px;
+}
+
+.rivi{
+    text-align: center;
+	float: left;
+	padding:4%;
+    width: 25%;
+}
+
+.rivi img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.rivi img:hover {
+	-moz-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.rivi:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.rivi a {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.rivi a:hover {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.riviVasen{
+    display: table-cell; /*Tämä koodi laittaa divit samaan riviin*/
+	max-width: 50%;
+	height: auto;
+}
+
+.riviOikea{
+    display: table-cell; /*Tämä koodi laittaa divit samaan riviin*/
+	max-width: 50%;
+	height: auto;
+}
+
+.serviisit {
+	border: red solid 0px;
+	height: 220px;
+	width: 274px;
+	float: left;
+	padding: 23px;
+	padding-top: 100px;
+}
+
+.serviisit h1 {
+	padding-bottom: 100px;
+}
+
+.serviisit h3 {
+	padding-top: 20px;
+ 	font-family: Arial, Oswald;
+	color:#454454;
+	font-size: 25px;
+}
+
+.lisaaTietoa{
+	margin-top: 700px;
+}
+
+.contact {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.contact h1 {
+	font-size: 90px;
+	color:#890010;
+	padding-bottom: 100px;
+}
+
+.contact p {
+	text-align: none;
+	font-size: 40px;
+	color:#f0f0f0;
+	padding: 0px;
+}
+
+.contact a {
+	color:#f0f0f0;
+	text-decoration: none;
+	border-bottom: 3px solid #ffffff;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.contact a:hover {
+	border-bottom: 3px solid transparent;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sisennys {
+	max-width: 1280px;
+	margin: 0 auto;
+	min-height: 200px;
+}
+.sisennys h1 {
+	font-size: 90px;
+	color:#454454;
+}
+
+.sisennys h2 {
+	font-size: 60px;
+	color:#454454;
+	line-height: 200%;
+}
+
+.sisennys p {
+	text-align: none;
+	font-size: 40px;
+	color:#454454;
+	padding: 0px;
+}
+
+.sisennys a {
+	text-decoration: none;
+	color:#454454;
+	border: #454454 solid 2px;
+	padding: 10px;
+	margin: 70px;
+	background: transparent;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sisennys a:hover {
+	background: #fff;
+	padding: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.aboutti2 {
+	max-width: 1280px;
+	margin: 0 auto;
+	min-height: 200px;
+	color:#fff;
+}
+.aboutti2 p {
+	text-align: none;
+	font-size: 40px;
+	color:#fff;
+	padding: 0px;
+}
+
+.aboutti2 a {
+	text-decoration: none;
+	color:#fff;
+	border: #fff solid 2px;
+	padding: 10px;
+	margin: 70px;
+	background: transparent;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.aboutti2 a:hover {
+	background: #000;
+	padding: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+#content {
+	background: #f0f0f0;
+	color: #fff;
+	max-width: 960px;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#content p {
+ 	font: 22px Arial, Oswald;
+	color: #454454;
+	line-height: 150%;
+}
+
+#content a {
+	font-size: 22px Arial, Oswald;
+	color: #454454;
+	text-decoration: none;
+	border-bottom: 2px double #454454;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#content a:hover {
+	border-bottom: 2px solid transparent;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#content h1 {
+ 	font: 65px Arial, Oswald;
+	color:#454454;
+	line-height: 150%;
+}
+
+#content h2 {
+ 	font: 50px Arial, Oswald;
+	color:#454454;
+	line-height: 150%;
+}
+#content h3 {
+ 	font: 30px Arial, Oswald;
+	color:#454454;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#content h4 {
+ 	font: 16px Arial, Oswald;
+	color:#000;
+	line-height: 150%;
+}
+
+#content ul {
+	text-align: left;
+	list-style: none;
+	color:#454454;
+	font-size: 20px;
+	line-height: 300%;
+}
+
+#content ul a {
+	font-family: Arial, Oswald;
+	background: #f0f0f0;
+	border: 0px solid #454454;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	-ms-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+#content ul a:hover{
+	background-color: #fff;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	-ms-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+#content table{
+	text-align: center;
+}
+#yrittaja {
+	padding-top: 100px;
+}
+.post {
+	border-bottom: 0px #454454 solid;
+	text-align: left;
+}
+
+#video {
+	border: 0px solid #686868;
+	max-width: 100%;
+	height: auto;
+}
+
+.omakuva {
+	padding: 20px;
+	float: left;
+	 border-radius: 500px;
+}
+
+.avatar {
+	padding-top: 20px;
+	padding-right: 20px;
+	float: left;
+	 border-radius: 500px;
+}
+
+.kirjoittaja {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.about {
+	text-align: justify;
+}
+#someloota {
+	float: right;
+}
+#someloota a {
+	border: 0px solid #fff;
+}
+.someikonit {
+	float: none;
+	padding: 10px;
+	border-radius: 80px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.someikonit:hover {
+	background-color: #454454;
+	border-radius: 80px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#footteri {
+	background: #454454;
+	text-align: center;
+	padding: 50px;
+	border: 0px #0f0f0f solid;
+	min-height: 50px;
+	color: #dddddd;
+	font: 18px Arial, Oswald;
+}
+
+#footteri h1 {
+	padding: 5px;
+	font-size: 26px;
+	font-weight: none;
+	color: #dddddd;
+	border: 0px #0f0f0f solid;
+}
+
+#footteri img{
+
+	border: 0px #0f0f0f solid;
+
+}
+
+#footteri a{
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+	opacity: 1;
+}
+
+#footteri a:hover{
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+	opacity: 0.5;
+}
+
+.ylosNappi {
+	display: none;
+	background: transparent;
+	width: 60px;
+	height: 60px;
+	border: 0px solid #000;
+    position: fixed;
+    top: 85%;
+	left: 95%;
+	z-index: 1;
+}
+
+.ylosNappi a {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.ylosNappi a :hover {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.alasNappi {
+	background: #454454;
+	width: 100%;
+	height: 60px;
+	border: 0px solid #000;
+    position: relative;
+	margin: 0 auto;
+	padding: 10px;
+}
+.alasNappi a {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+	opacity: 1;
+}
+.alasNappi a:hover {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+   	 transition: 0.3s ease;
+	opacity: 0.5;
+}
+.wpcf7-response-output {
+	border: 0px solid #red;
+ 	font: 22px Arial, Oswald;
+	color: #454454;
+}
+
+/*
+	====================================================================
+	Kommentti CSS-tyylit
+	====================================================================
+*/
+
+.comment-header img{
+	float: left;
+	margin: 10px;
+	border-radius: 20px;
+}
+.comment-header {
+	height: 50px;
+	margin-right: 8px;
+}
+.comment-list li.comment {
+	margin-bottom: 100px;
+}
+.comment-list .depth-2, .depth-3 {
+	margin: 20px 0 0 20px;
+	border-top: 3px #000 solid;
+}
+.comment-list p {
+	clear: both;
+	margin: 10px;
+}
+
+.comment-list a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.wpcf7-form-control {
+	background: #fff;
+	border: 2px #000 solid;
+	padding: 5px;
+	margin: 10px;
+	color: #454454;
+	font-size: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.wpcf7-submit {
+	cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+	border: 2px #454454 solid;
+	background: #454454;
+	color: #fff;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#submit {
+	background: #fff;
+	border: 2px #000 solid;
+	padding: 5px;
+	color: #454454;
+	cursor: pointer;
+	font-size: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+#submit:hover {
+	border: 2px #454454 solid;
+	background: #454454;
+	color: #fff;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+#commentform {
+	max-width: 500px;
+}
+#author {
+	width: 100%;
+}
+#email {
+	width: 100%;
+}
+#url {
+	width: 100%;
+}
+#comment {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+/*
+	====================================================================
+	Näillä seuraavilla koodeilla saa aikaan responsiiviset sivut
+	====================================================================
+*/
+@media (max-width: 1580px)  {
+
+#navi {
+	width: 90%;
+}
+}
+
+@media (max-width: 1280px)  {
+
+.serviisit {
+	width: 300px;
+}
+#tervetuloaloota {
+	left: 50%;
+}
+.lisaaTietoa{
+	margin-top: 1000px;
+}
+#tervetuloaloota p {
+	font-size: 45px;
+}
+}
+
+@media (max-width: 1038px)  {
+
+.serviisit {
+	width: 400px;
+}
+.lisaaTietoa {
+	margin-top: 1200px;
+}
+}
+
+@media (max-width: 930px)  {
+
+.serviisit {
+	width: 350px;
+}
+.rivi{
+	float: none;
+	padding:0%;
+    	width: 100%;
+}
+}
+
+@media (max-width: 805px)  {
+
+.serviisit {
+	width: 300px;
+}
+.lisaaTietoa {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+}
+
+@media (max-width: 768px)  {
+#navi {
+	width: 80%;
+}
+.alasNappi {
+    top: 88%;
+}
+#puhelin {
+	display: block;
+}
+
+#video {
+	padding-top: 100px;
+}
+.ylosNappi {
+	left: 75%;
+}
+#tervetuloaloota {
+	opacity: 0;
+	display: none;
+}
+#main p {
+	line-height: 120%;
+	font-size: 20px;
+}
+#main h1 {
+	line-height: 120%;
+	font-size: 35px;
+}
+#main h2 {
+	line-height: 120%;
+	font-size: 30px;
+}
+.indexloota {
+	min-height: 200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.indexloota2 {
+	min-height: 200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#footer p {
+	font-size: 20px;
+}
+.serviisit {
+	float: none;
+	margin: 0 auto;
+}
+
+}
+
+@media (max-width: 600px)  {
+
+.wpcf7-form-control {
+	max-width: 400px;
+}
+#navi {
+	width: 70%;
+}
+}
+@media (max-width: 480px)  {
+#navi {
+	width: 65%;
+}
+.ylosNappi img {
+	display: none;
+}
+
+#kansikuva {
+	height: 125px;
+}
+
+#footteri {
+	padding: 16px;
+}
+
+#footteri h1 {
+	font-size: 16px;
+}
+
+.sisennys a {
+	margin: 30px;
+}
+
+.comment-header {
+	line-height: 100%;
+	margin-right: 8px;
+}
+
+.wpcf7-form-control {
+	max-width: 300px;
+}
+}
+
+@media (max-width: 340px)  {
+#navi {
+	width: 60%;
+}
+.wpcf7-form-control {
+	max-width: 250px;
+}
+}
